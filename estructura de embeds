@@ -1,0 +1,21 @@
+client.on("message", msg => {
+
+  let usuario = msg.mentions.members.first() || msg.member;
+  const args = msg.content.slice(prefix.length).trim().split(/ +/g);
+  const command = args.shift().toLowerCase();
+
+  if (msg.content.startsWith(prefix + "")) {
+
+    let embed = new Discord.MessageEmbed()
+    .setTitle('')
+    .setThumbnail(``)
+    .setColor(00000)
+    .setDescription('')
+    .addField(``, ``)
+    .setimage("")
+    .setFooter(``)
+
+    msg.channel.send(embed);
+
+  }
+});
