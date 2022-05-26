@@ -18,6 +18,8 @@ module.exports = {
    message.delete()
 
    message.channel.send(texto)
+
+		 
  
  }
   
